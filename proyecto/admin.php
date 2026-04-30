@@ -52,29 +52,29 @@ $resultado = $conn->query("SELECT * FROM herramientas");
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-orange-100 text-white p-6">
+<body class="bg-orange-200 text-white p-6">
 
 <h1 class="text-3xl font-bold text-orange-500 mb-6">
     Gestión de Herramientas
 </h1>
 
-<form method="POST" action="<?= $editar ? '?editar='.$data['id'] : '' ?>" class="bg-gray-900 p-4 rounded mb-6">
+<form method="POST" action="<?= $editar ? '?editar='.$data['id'] : '' ?>" class="bg-gray-600 p-4 rounded-full mb-6">
 
     <input type="hidden" name="id" value="<?= $data['id'] ?? '' ?>">
 
-    <input type="text" name="nombre" required
+    <input type="text" placeholder="Nombre" name="nombre" required
         value="<?= $data['nombre'] ?? '' ?>"
         class="w-full p-2 mb-2 text-black rounded">
 
-    <input type="text" name="marca"
+    <input type="text" placeholder="Marca" name="marca"
         value="<?= $data['marca'] ?? '' ?>"
         class="w-full p-2 mb-2 text-black rounded">
 
-    <input type="number" name="stock"
+    <input type="number" placeholder="Stock disponible" name="stock"
         value="<?= $data['stock'] ?? '' ?>"
         class="w-full p-2 mb-2 text-black rounded">
 
-    <input type="number" step="0.01" name="precio"
+    <input type="number" step="0.01" placeholder="Precio de venta" name="precio"
         value="<?= $data['precio'] ?? '' ?>"
         class="w-full p-2 mb-2 text-black rounded">
 
@@ -85,7 +85,7 @@ $resultado = $conn->query("SELECT * FROM herramientas");
 
 </form>
 
-<table class="w-full bg-gray-900 rounded">
+<table class="w-full bg-gray-600 rounded">
     <thead class="bg-orange-500 text-black">
         <tr>
             <th>ID</th>
@@ -108,13 +108,13 @@ $resultado = $conn->query("SELECT * FROM herramientas");
 
             <td class="space-x-2">
                 <a href="?editar=<?= $row['id'] ?>"
-                   class="bg-orange-500 px-2 py-1 rounded">
+                   class="bg-orange-500 px-2 py-1 rounded hover:bg-orange-600">
                    Editar
                 </a>
 
                 <a href="?eliminar=<?= $row['id'] ?>"
                    onclick="return confirm('¿Eliminar?')"
-                   class="bg-red-500 px-2 py-1 rounded">
+                   class="bg-red-500 px-2 py-1 rounded hover:bg-orange-600">
                    Eliminar
                 </a>
             </td>
