@@ -54,11 +54,11 @@ $resultado = $conn->query("SELECT * FROM herramientas");
 
 <body class="bg-orange-200 text-white p-6">
 
-<h1 class="text-3xl font-bold text-orange-500 mb-6">
+<h1 class="text-3xl font-bold text-orange-600 mb-6">
     Gestión de Herramientas
 </h1>
 
-<form method="POST" action="<?= $editar ? '?editar='.$data['id'] : '' ?>" class="bg-gray-600 p-4 rounded-15 mb-6">
+<form method="POST" action="<?= $editar ? '?editar='.$data['id'] : '' ?>" class="bg-gray-600 p-4 rounded-lg mb-6">
 
     <input type="hidden" name="id" value="<?= $data['id'] ?? '' ?>">
 
@@ -85,7 +85,7 @@ $resultado = $conn->query("SELECT * FROM herramientas");
 
 </form>
 
-<table class="w-full bg-gray-800 rounded-15">
+<table class="w-full bg-gray-600 rounded-lg">
     <thead class="bg-orange-500 text-black">
         <tr>
             <th>ID</th>
@@ -99,7 +99,7 @@ $resultado = $conn->query("SELECT * FROM herramientas");
 
     <tbody>
     <?php while($row = $resultado->fetch_assoc()): ?>
-        <tr class="text-center border-b border-gray-700 h-10 hover:bg-gray-500">
+        <tr class="text-center border-b border-gray-700 h-10 hover:bg-gray-400">
             <td><?= $row['id'] ?></td>
             <td><?= $row['nombre'] ?></td>
             <td><?= $row['marca'] ?></td>
