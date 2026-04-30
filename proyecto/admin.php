@@ -52,7 +52,7 @@ $resultado = $conn->query("SELECT * FROM herramientas");
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-black text-white p-6">
+<body class="bg-orange-100 text-white p-6">
 
 <h1 class="text-3xl font-bold text-orange-500 mb-6">
     Gestión de Herramientas
@@ -108,7 +108,7 @@ $resultado = $conn->query("SELECT * FROM herramientas");
 
             <td class="space-x-2">
                 <a href="?editar=<?= $row['id'] ?>"
-                   class="bg-blue-500 px-2 py-1 rounded">
+                   class="bg-orange-500 px-2 py-1 rounded">
                    Editar
                 </a>
 
