@@ -1,11 +1,6 @@
 <?php
 session_start();
 
-if (isset($_SESSION['usuario'])) {
-    header("Location: dashboard.php");
-    exit();
-}
-
 $usuario_correcto = "23161072@itoaxaca.edu.mx";
 $password_correcto = "23161072ITSO";
 
@@ -17,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if ($usuario === $usuario_correcto && $password === $password_correcto) {
         $_SESSION['usuario'] = $usuario;
-        header("Location: dashboard.php");
+        header("Location: admin.php");
         exit();
     } else {
         $error = true;
