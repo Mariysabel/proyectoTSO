@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 $usuario_correcto = "23161072@itoaxaca.edu.mx";
 $password_correcto = "23161072ITSO";
@@ -11,7 +10,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $password = $_POST['password'] ?? '';
 
     if ($usuario === $usuario_correcto && $password === $password_correcto) {
-        $_SESSION['usuario'] = $usuario;
         header("Location: admin.php");
         exit();
     } else {
