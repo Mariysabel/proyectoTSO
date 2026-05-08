@@ -128,27 +128,3 @@
 
 </body>
 </html>
-        </p>
-
-        <p class="text-lg md:text-xl mb-8 opacity-90 ">
-            Mantener una mejora continua acelerada para maximizar la satisfacción de nuestros clientes, a través de la excelencia en la calidad de nuestros productos y servicios.
-        </p><br>
-
-        <p class="text-lg md:text-xl mb-8 opacity-90 text-bold">
-            Visión
-        </p><br>
-
-        <p class="text-lg md:text-xl mb-8 opacity-90">
-            Mantenernos como el proveedor más importante y relevante del mercado ferretero en México y América Latina, asegurando la estabilidad de la empresa en el largo plazo a través de un crecimiento y rentabilidad congruentes con el entorno, promoviendo así el desarrollo de nuestros colaboradores y de México.
-        </p>
-
-
-        <a href="login.php"
-           class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-xl shadow-lg transition">
-            Iniciar sesión
-        </a>
-
-    </div>
-
-</body>
-</html>
