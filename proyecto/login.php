@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <body class="bg-gradient-to-r from-orange-500/80 to-black/90 flex items-center justify-center h-screen">
 
     <form method="POST" class="bg-white p-8 rounded-2xl shadow-md w-80">
-        <h2 class="text-2xl font-bold mb-6 text-center">Iniciar sesion</h2>
+        <h2 class="text-2xl font-bold mb-6 text-center">Iniciar sesion en TRUPPER</h2>
 
         <input type="text" name="usuario" placeholder="Usuario"
             class="w-full p-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" required>
