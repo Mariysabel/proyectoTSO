@@ -21,7 +21,7 @@
         <div class="text-center mb-12">
 
             <h1 class="text-5xl md:text-7xl font-extrabold text-orange-500 tracking-wide">
-                TERCERA OPORTUNIDAD MEPR 
+                Examen ter
             </h1>
 
             <div class="w-28 h-1 bg-orange-500 mx-auto mt-4 mb-5 rounded-full"></div>
