@@ -48,7 +48,7 @@ $resultado = $conn->query("SELECT * FROM herramientas");
 <body class="bg-orange-200 text-white p-6">
 
 <h1 class="text-3xl font-bold text-orange-600 mb-6">
-    Gestión de Herramientas Prueba dos
+    Gestion de Herramientas
 </h1>
 
 <form method="POST" action="<?= $editar ? '?editar='.$data['id'] : '' ?>" class="bg-gray-600 p-4 rounded-lg mb-6">
